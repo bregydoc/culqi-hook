@@ -7,7 +7,9 @@ Tested from React 16.8.1 upwards.
 ## How to install
 Well, this is straightforward:
 
-```yarn add culqi-hook```
+```
+yarn add culqi-hook
+```
 
 ## Documentation
 Currently Culqi Hook doesn't have a full documentation, but you can read a full example [here](https://github.com/bregydoc/culqi-hook/blob/master/example/index.js)
