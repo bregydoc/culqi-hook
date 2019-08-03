@@ -1,7 +1,7 @@
 {
   "name": "culqi-hook",
-  "version": "0.0.1",
-  "author": "bregydoc",
+  "version": "0.0.3",
+  "author": "bregy",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -20,6 +20,6 @@
     "react-dom": "^16.8.6"
   },
   "dependencies": {
-    "axios": "^0.19.0"
+    "culqi-hook": "^0.0.2"
   }
 }

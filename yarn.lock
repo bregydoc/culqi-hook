@@ -2050,6 +2050,13 @@ cssstyle@^1.0.0:
   dependencies:
     cssom "0.3.x"
 
+culqi-hook@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/culqi-hook/-/culqi-hook-0.0.2.tgz#f77a02d5f9884dd6345470ad9fb111dd606468b6"
+  integrity sha512-cNHmpSvbOuvt/k5y/qHROX6w30E0w6TOmnM0mkjtH1WXLhmcmfqnYQAyh6YLGj2FJcvBvtxEwqiop5lOIC6nag==
+  dependencies:
+    axios "^0.19.0"
+
 dashdash@^1.12.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/dashdash/-/dashdash-1.14.1.tgz#853cfa0f7cbe2fed5de20326b8dd581035f6e2f0"

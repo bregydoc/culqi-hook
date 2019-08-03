@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 import ReactDOM from "react-dom";
-import { useCulqi } from "../src";
+import { useCulqi } from "culqi-hook";
 
 const App = () => {
   const [token, createToken, ready] = useCulqi("pk_test_POQJOT184VO1HOkc");
