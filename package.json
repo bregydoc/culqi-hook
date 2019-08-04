@@ -1,12 +1,16 @@
 {
   "name": "culqi-hook",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "author": "bregy",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/bregydoc/culqi-hook.git"
   },
+  "main": "dist/culqi-hook.js",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "format": "prettier --write '**'",
     "build": "rm -rf dist && microbundle --external react --globals react=React --strict --no-compress"
@@ -19,7 +23,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
-  "dependencies": {
-    "culqi-hook": "^0.0.2"
+  "bugs": {
+    "url": "https://github.com/bregydoc/culqi-hook/issues"
   }
 }
