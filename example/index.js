@@ -1,14 +1,9 @@
-import React, { useEffect } from "react";
-
+import React from "react";
 import ReactDOM from "react-dom";
 import { useCulqi } from "culqi-hook";
 
 const App = () => {
-  const [token, createToken, ready] = useCulqi("pk_test_POQJOT184VO1HOkc");
-
-  useEffect(() => {
-    console.log(token);
-  }, [token]);
+  const [result, createToken] = useCulqi("pk_test_POQJOT184VO1HOkc");
 
   const newToken = () => {
     createToken({
@@ -22,11 +17,16 @@ const App = () => {
 
   return (
     <div>
-      <h1>Hello World</h1>
-      <div>{ready ? "Ready!" : "Starting..."}</div>
+      <h1>culqi-hook, use example</h1>
+      <div>{result.ready ? "Ready!" : "Starting..."}</div>
+      <div>{result.loading ? "Loading..." : "Loaded!"}</div>
       <br />
-      <div>newToken: {token ? token : ""}</div>
-      <button onClick={newToken}>Hello</button>
+      <div>
+        Result: {result.token ? "[TOKEN] " : result.error ? "[ERROR] " : ""}
+        {result.token ? result.token : ""}
+        {result.error ? result.error.userMessage : ""}
+      </div>
+      <button onClick={newToken}>Generate Token</button>
     </div>
   );
 };
